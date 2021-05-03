@@ -2,51 +2,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice Introduction </title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan Final Project</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-deep-purple.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/qch1cjo.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <h1>Joan Huq</h1>
-      <h2>HOME</h2>
-      <nav>
-        <a href="index.html">HOME</a>
-        <a href="pages/Jameela.html">JAMEELA</a>
-        <a href="pages/Solaman.html">SOLAMAN</a>
-        <a href="pages/sidra.html">SIDRA</a>
-      </nav>
+    <header class="w3-container w3-theme-deep-purple">
+        <H1>Huq Family </H1>
+        <h2>HOME</h2>
+        <nav class="w3-bar w3-border">
+            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="#">Home</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/jameela.html">Jameela</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/sidra.html">Sidra</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/solaman.html">Solaman</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/mehmet.html">Mehmet</a>
+        </nav>
     </header>
     <main id="front-main">
-      <h3>Bio</h3>
-      <p>My children are my primary interest and what motivates a lot of my choices.
-        Each one of them has unique stories. <br>
-        <br> In this site I am sharing only one part of their lives.</p>
-      <ul>
-        <li>Jameela my oldest daughter has taken many paths to where she is now but one thing that remains constant is
-          her
-          love of music. If you love music but are looking for a different career in other fields you might find this
-          interesting.</li>
-        <li>Solaman my middle child lives in California with his wife Sasha. On his page, you might find his Pakistan
-          wedding culture and tradition of interest. </li>
-        <li>Sidra my youngest interests are writing and drawing. On her page is a tour of her books.</li>
-      </ul>
+        <div class="w3-sand">
+            <h3>Bio</h3>
+            <p> <span> I am a mother of 3 children and they are my life’s primary focus. They are major reasons
+                    for
+                    my life's choices. Each one of them has unique stories, personalities, and passions. </span>
+                <span>In this site I am sharing only one part of their lives. </span>
+                <p>Jameela my oldest daughter since kindergarten has taken many paths to where she is now.
+                    She has
+                    made numerous, educational and career changes but one passion remained constant, her
+                    love for music.
+                    So if your passion is music but making your living in a different field. You especially
+                    will find her story very interesting.
+                    <p>Solaman my middle child, got married a few years back to a great girl named Sasha. What
+                        is unique is that this wedding took place in Pakistan. How it was a arrange marriage
+                        with
+                        unfamiliar culture and customs is what I have highlighted on his site.
+                    </p>
+                    <p>Sidra my youngest one who loves to write stories, poetry, and draw. On her page is a
+                        tour of her books and stories.</p>
+        </div>
     </main>
     <aside id="front-aside">
-      <h3>My Family</h3>
-      <img src="images/family.jpg" alt="Family">
+        <div class="w3-sand">
+            <h3>My Family</h3>
+            <img id="front-aside" src="images/family.jpg" alt="My Family">
+        </div>
     </aside>
-
-    <footer>
-      <p>&copy; Joan Huq 2021</p>
+    <article class="w3-panel w3-bottombar w3-hover-border-sand">
+        <h3>Quote</h3>
+    </article>
+    <button class="w3-btn" onclick="document.getElementById('quote').style.display='block'">Show Quote</button>
+    <div id="quote" class="w3-panel w3-display-container w3-border-bottom-sand w3-border-sand w3-light-gray"
+        style="display:none">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>
+        <p> <q> “Your children are not your children. They are the sons and daughters of Life’s longing for itself...
+                <br>
+                You may give them your love but not your thoughts, for they have their own thoughts. You may house their
+                bodies but not their souls, for their souls dwell in the house of tomorrow which you cannot visit, not
+                even in your dreams.…”
+            </q>
+        </p>
+        <p><em> ― Kahlil Gibran, The Prophet</em></p>
+    </div>
+    <footer class="w3-container">
+        <p>&copy; Joan Huq 2021</p>
     </footer>
-
-  </div>
-
-
 </body>
 
 </html>
