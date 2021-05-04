@@ -149,7 +149,7 @@ ol {
 }
 dt{
     font-weight: bold;
-    color: var(--background-light)
+    color: var(--background-light);
     text-align: left;
     list-style-position: outside;
 }
