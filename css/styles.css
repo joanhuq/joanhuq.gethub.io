@@ -65,31 +65,55 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
 /*  ---------------------- Variables ---------------------- */
 /* Read more about variables here: https://www.w3schools.com/css/css3_variables.asp */
 :root{
-  --background-light: #9E42FF;
-  --background-dark: #804ABA;
+  --background-light: #8A13AE;
+  --background-dark:#8201A9;
   --border:#804ABA;
-  --borderorg: 3px solid rgb(230, 99, 58); 
-  --text: #f0ef65;
-  --accent: #a3a324;
-  --text-light: white;
+  --text: #FEFE25;
+  --accent: #F4F4C0;
+  --text-black: #280931;
+  --w3-khaki: #f0e68c;
 }
 
-
 /* ---------------------- layout ------------------------- */
- body{
+ body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-light);
+    min-height: 1080px;
+    min-width: 1050px;
     box-sizing: border-box;
     line-height: 1.5em;
+    border: var(--background-dark);
+    background-color: var(--background-dark);
+    border: var(--background-dark);
+}
+.w3-panel{
+    border: var(--accent) ;
+    border: 3px solid var(--background-dark);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--accent);
+}
+.pale-khaki{
+    background-color:var(--w3-khaki);
+
+}
+.pale purple{
+    background-color: var(--background-dark);
+}
+
+.dotted-border{
+    border: 3px dotted var(--background-dark);
+    margin-bottom: 20px;
 }
 
 .container{
     min-width: 1080px;
     min-height: 500px;
     padding: 20px;
-    border: 3px solid var(--background-light);
+    border: 3px solid var(--accent);
     border-radius: 10px;
-    background-color:  #F3FFD1;
+    background-color:  var(--background-dark);
     list-style: none;
 }
 .accent{
@@ -98,43 +122,47 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
 
 p{
    display: block;
-    color:black;
+    color: var(--text);
    font-family: 'Roboto', sans-serif;
    line-height: 1.5;
    padding: 15px; 
+   color: var(--text-black);
 }
 
+nav{
+    text-align: center;
+    line-height:20px;
+    padding: 25px;
+    border: 3px dotted var(--border);
+}
 
 header{
     text-align: center;
     border-radius: 15px;
-    background-color: var(--information);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    background-color: var(--background-dark);
+    padding-top: 15px;
+    padding-bottom: 15px;
     line-height: 1em;
     margin: auto 70px 70px;
 }
-
 
 .w3-bar .w3-bar-item{
     text-align: center;
     display: inline-block;
     float: none;
     background-color: var(--background-dark);
-    border: 3px solid var(--background-light);
-    
+    border: 3px solid var(--background-dark);
+    border-radius: 8px 25px;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 
 .w3-purple, .w3-hover-purple:hover{
     text-align: center;
     display: inline-block;
     float: none;
-    border: 3px solid green;
-}
-ul a{
-    display: block;
-    margin-inline-start: 40px;
-    text-align: left; 
+    border: 3px solid var(--background-dark);
+    background-color: var(--background-dark);
 }
 
 dl {
@@ -157,32 +185,29 @@ dt{
     text-align: left;
     list-style-position: outside;
 }
-
-dd {
-    display: block;
-    margin-inline-start: 40px;
-    text-align: left;
-}
-
-.w3-border{
-    border: 3px dotted var(--border);
-}
-
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
 
+.container-golden{
+    min-width: auto;
+    min-height: auto;
+    line-height: 1em;
+    list-style: none;
+    text-align: center;
+    background: var(--accent);
+    color: var(--text-black);
 }
 
 .w3-container{
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 15px;
-    min-width: 1080px;
+    min-width: auto;
+    min-height: auto;
     line-height: 1em;
     list-style: none;
+    text-align: center;
 }
 
 li{
@@ -196,57 +221,50 @@ li{
     border: 3px solid rgb(230, 99, 58);
     border-radius: 10px;
     overflow: auto;
-    background: rgb(226, 209, 189);
+    background: var(--accent);
+    color: var(--accent);
 } 
 
 h1{
     display: block;
     text-align:center;
-    padding: 15px;
+    padding: 25px;
     font-weight: bold;
     font-size: large; 
     font-family: 'Roboto', sans-serif; 
+    color: var(--text-black);
 }
 
 h2{
     text-align:center;
-    padding: 15px;
+    padding: 25px;
     font-weight: bold;
     font-size: large;
     font-family: aviano-flare, sans-serif;
+     color: var(--text-black);
 }
 
 h3, h4, h5, h6, hr{ 
     display: block;
     padding: 15px; 
     font-family: 'Open Sans', sans-serif; 
-    font-size: 1.5em;   
+    font-size: 1.5em;
+    color: var(--text-black);   
 }
 
-nav{
+.home__main {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 20px;
+    box-sizing: border-box;
+    color: var(--text-black);
+}
+
+.home__aside, .home__bio {
+    flex: 1 50%;
+    box-sizing: border-box;
     text-align: center;
-    line-height:20px;
-    padding: 10px;
-}
-
-#front-main{
-    float: left;
-    width: 50%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-
-#front-aside{
- float: right;
- width: 45%;
- margin: 10px 5px;
- padding: 10px;
- align-content: flex-start;
-}
-
-main{
-    padding: 10px 20px;
-    box-sizing: border-box;
+    color: var(--text-black)
 }
 
 /* remove borders when done with page layout */
@@ -266,7 +284,7 @@ active MUST come after hover */
 
 .local-links{
     background: rgb(205 209 218);
-    border: 2px solid rgb(70, 18, 70);
+    border: 2px solid var(--background-dark);
     text-align: center;
     width: 90%;
     margin: 10px auto;
@@ -276,10 +294,26 @@ active MUST come after hover */
 .local-links a{
     margin-left:  15px;
 }
-footer{
+footer {
     clear: both;
     text-align: center;
     padding: 20px;
+    width: 100%;
+}
+
+.w3-btn{
+    background-color: var(--background-dark);
+}
+
+.home__quote{
+    margin-top: 15px;
+    flex: 100% 1;
+    text-align: left;
+    background-color: var(--background-dark);
+    color: var(--accent);
+}
+
+.home__image {
     width: 100%;
 }
 
@@ -288,7 +322,7 @@ figcaption{
     padding: 2px;
     text-align: center;
     font-family: sans-serif;
-    color:#772FAD;
+    color: var(--background-dark);
     background-color: #ECFA91;
 }
     
@@ -303,13 +337,9 @@ figcaption{
     border-radius: 10px;
     
 }
-#front-aside img {
-    width: 100%;
-    display: block;
-}
 
 #resizebackground-image{
-    border: 1px var(--background-light);
+    border: 1px var(--background-dark);
     background: url(/images/pink-flowers.jpg);
     background-size: 100Px 80px;
     background-repeat: no-repeat;
@@ -370,28 +400,10 @@ figcaption{
      width:300px;
     float: right;
 }
-#tarantella{
-    width:300px;
-    float: right top;
-
-}
 .div{
     float: left;
     padding: 15px;
 }
 .div1{
     float: right;  
-
 }
-.div2{
-    float: right top;
-}
-.div3{
-    float: right top;
-}
-
-
-
-
-
-
