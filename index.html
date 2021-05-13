@@ -20,20 +20,22 @@
 </head>
 
 <body>
-    <header class="w3-container w3-theme-deep-purple">
+    <header class="w3-container w3-khaki">
         <H1>Huq Family </H1>
         <h2>HOME</h2>
-        <nav class="w3-bar w3-border">
-            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="#">Home</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/jameela.html">Jameela</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/sidra.html">Sidra</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/solaman.html">Solaman and
+        <nav class="w3-bar dotted-border">
+            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="#">Home</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki"
+                href="pages/jameela.html">Jameela</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="pages/sidra.html">Sidra</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="pages/solaman.html">Solaman
+                and
                 Sasha</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-black w3-hover-green" href="pages/mehmet.html">Mehmet</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="pages/mehmet.html">Mehmet</a>
         </nav>
     </header>
-    <main id="front-main">
-        <div class="w3-sand">
+    <main class="home__main">
+        <div class="home__bio w3-khaki">
             <h3>Bio</h3>
             <p> <span> I am a mother of 3 children and they are my life’s primary focus. They are major reasons
                     for
@@ -53,30 +55,37 @@
                     <p>Sidra my youngest one who loves to write stories, poetry, and draw. On her page is a
                         tour of her books and stories.</p>
         </div>
+        <aside class="home__aside w3-khaki">
+            <div class="w3-khaki">
+                <h3>My Family</h3>
+                <img class="home__image" src="images/family.jpg" alt="My Family">
+            </div>
+        </aside>
+        <article class="home__quote w3-border w3-bottombar w3-hover-border-khaki">
+            <div class="w3-khaki">
+                <h3>Quote</h3>
+            </div>
+            <button class="w3-btn" onclick="document.getElementById('quote').style.display='block'">Show
+                Quote</button>
+            <div id="quote" class="w3-panel w3-display-container w3-border-bottom-sand w3-border-sand w3-light-gray"
+                style="display:none">
+                <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>
+                <p> <q> “Your children are not your children. They are the sons and daughters of Life’s
+                        longing for itself...
+                        <br>
+                        You may give them your love but not your thoughts, for they have their own thoughts.
+                        You may house their
+                        bodies but not their souls, for their souls dwell in the house of tomorrow which you
+                        cannot visit, not
+                        even in your dreams.…”
+                    </q>
+                </p>
+                <p><em> ― Kahlil Gibran, The Prophet</em></p>
+            </div>
+        </article>
     </main>
-    <aside id="front-aside">
-        <div class="w3-sand">
-            <h3>My Family</h3>
-            <img id="front-aside" src="images/family.jpg" alt="My Family">
-        </div>
-    </aside>
-    <article class="w3-panel w3-bottombar w3-hover-border-sand">
-        <h3>Quote</h3>
-    </article>
-    <button class="w3-btn" onclick="document.getElementById('quote').style.display='block'">Show Quote</button>
-    <div id="quote" class="w3-panel w3-display-container w3-border-bottom-sand w3-border-sand w3-light-gray"
-        style="display:none">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>
-        <p> <q> “Your children are not your children. They are the sons and daughters of Life’s longing for itself...
-                <br>
-                You may give them your love but not your thoughts, for they have their own thoughts. You may house their
-                bodies but not their souls, for their souls dwell in the house of tomorrow which you cannot visit, not
-                even in your dreams.…”
-            </q>
-        </p>
-        <p><em> ― Kahlil Gibran, The Prophet</em></p>
-    </div>
-    <footer class="w3-container">
+
+    <footer class="w3-container w3-khaki">
         <p>&copy; Joan Huq 2021</p>
     </footer>
 </body>
