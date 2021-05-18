@@ -125,7 +125,6 @@ p{
     color: var(--text);
    font-family: 'Roboto', sans-serif;
    line-height: 1.5;
-   padding: 15px; 
    color: var(--text-black);
 }
 
@@ -169,8 +168,8 @@ dl {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-     margin-left: 0;
-     margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 ol {
@@ -183,7 +182,11 @@ dt{
     font-weight: bold;
     color: black;
     text-align: left;
+}
+dd{
+    text-align: left;
     list-style-position: outside;
+    margin: 10px;
 }
 .center{
     display: block;
@@ -259,11 +262,14 @@ h3, h4, h5, h6, hr{
     box-sizing: border-box;
     color: var(--text-black);
 }
+.text_alignleft{
+    text-align: left;
+    line-height: 2;
+}
 
 .home__aside, .home__bio {
     flex: 1 50%;
     box-sizing: border-box;
-    text-align: center;
     color: var(--text-black)
 }
 
