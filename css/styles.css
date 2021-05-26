@@ -121,12 +121,21 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
 }
 
 p{
-   display: block;
+    padding: 15px;
     color: var(--text);
-   font-family: 'Roboto', sans-serif;
-   line-height: 1.5;
-   color: var(--text-black);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: var(--text-black);
 }
+
+.p-left{
+    text-align: left;
+    padding: 10px;
+    color: var(--text-black);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
 
 nav{
     text-align: center;
@@ -383,11 +392,16 @@ figcaption{
 #walima{
     width: auto; 
     margin-right:15px; 
-    float:left;   
+    float: right;   
 }
 #understand{
     width:300px;
     float: right;
+}
+
+#same-day{
+    width:300px;
+    float: left;
 }
 #cardinals{
     width:300px;
