@@ -135,8 +135,6 @@ p{
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 }
-
-
 nav{
     text-align: center;
     line-height:20px;
@@ -213,7 +211,6 @@ dd{
     background: var(--accent);
     color: var(--text-black);
 }
-
 .w3-container{
     min-width: auto;
     min-height: auto;
@@ -226,6 +223,15 @@ li{
     color: #000;
     text-align: left;
     list-style-position: outside;
+}
+.ul-a{
+    text-align: left;
+    width: 60px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
 }
 .wedding-list{
     margin: 10px auto;
@@ -375,8 +381,8 @@ figcaption{
 }
 #nikah {
     width:auto;
-    padding-right:15px; 
-    float:right;
+    padding-right: 15px; 
+    float: right;
 }
 #nikahnight{
    width:auto;
@@ -411,7 +417,6 @@ figcaption{
      width:300px;
     float: right;  
 }
-
 #george{
      width:300px;
     float: left;
