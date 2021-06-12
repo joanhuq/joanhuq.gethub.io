@@ -213,9 +213,15 @@ dd{
     background: var(--accent);
     color: var(--text-black);
 }
+.body {
+    overflow-y: hidden
+}
+
 .main{
-    position: fixed;
+    position: relative;
     left: 15%;
+    width: 85%;
+    height: inherit;
 }
 
 .w3-container{

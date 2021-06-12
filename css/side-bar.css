@@ -7,3 +7,7 @@
     height: 100%;
     width: 15%;
 }
+
+.sidebar .w3-button {
+    display: block
+}
