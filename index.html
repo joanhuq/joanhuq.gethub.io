@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/qch1cjo.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/side-bar.css">
-
+    <script type='text/javascript' src='scripts/quoteToggle.js' async></script>
 </head>
 
 <body>
@@ -71,12 +71,10 @@
                 <div class="w3-khaki">
                     <h3>Quote</h3>
                 </div>
-                <button class="w3-btn" onclick="document.getElementById('quote').style.display='block'">Show
+                <button class="w3-btn" onclick="toggleQuote(this)">Show
                     Quote</button>
                 <div id="quote" class="w3-panel w3-display-container w3-border-bottom-sand w3-border-sand w3-light-gray"
                     style="display:none">
-                    <span onclick="this.parentElement.style.display='none'"
-                        class="w3-button w3-display-topright">X</span>
                     <p> <q> “Your children are not your children. They are the sons and daughters of Life’s
                             longing for itself...
                             <br>
