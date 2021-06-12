@@ -16,28 +16,49 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qch1cjo.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="codemirror.js"></script>
+    <script src="codemirror_jsx.js"></script>
+    <script src="myscript.js"></script>
+
 </head>
-<!-- Navbar -->
 
 <body>
-    <header class="w3-container w3-khaki">
-        <nav class="w3-bar dotted-border">
-            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="#">Home</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki"
-                href="pages/jameela.html">Jameela</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="../pages/sidra.html">Sidra</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki"
-                href="../pages/Solaman.html">Solaman/Sasha</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki"
-                href="../pages/mehmet.html">Mehmet</a>
-        </nav>
-    </header>
-    <div class="w3-container w3-center">
-        <h1>Welcome to my family site </h1>
+    <header>
+        <div class="container">
+            <label>
+                <input type="checkbox">
+                <div class="sidebar">
+                    <div class="sidebar_control">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="sidebar_content">
+                    </div>
+                    <div class="content"></div>
+            </label>
+        </div>
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block  w3-animate-left" style="display:none" id="mySidebar01">
+            <h3 class="w3-bar-item">Menu</h3>
+            <button onclick="w3_close01()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button  w3-green .w3-hover w3-green">Home</a>
+            <a href="pages/jameela.html" class="w3-bar-item w3-button .w3-hover">Jameela</a>
+            <a href="../pages/sidra.html" class="w3-bar-item w3-button .w3-hover">Sidra</a>
+            <a href="../pages/Solaman.html" class="w3-bar-item w3-button .w3-hover">Solaman/Sasha</a>
+            <a href="../pages/mehmet.html" class="w3-bar-item w3-button .w3-hover">Mehmet</a>
+        </div>
+        <!-- Page Content -->
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open01
+            ()">☰</button>
+            <div class="w3-container">
+                <h1>My Page</h1>
+            </div>
+        </div>
         <img src="images/mommobilebannner.jpg" alt="Self Mobile Banner">
-    </div>
-    </div>
-    </div>
+        </div>
+        </div>
+    </header>
     <main class="home__main">
         <div class="home__bio w3-khaki">
             <h3>Bio</h3>

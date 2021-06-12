@@ -18,16 +18,22 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <!-- Navbar -->
-<header class="w3-container w3-khaki">
-    <nav class="w3-bar dotted-border">
-        <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="../index.html">Home</a>
-        <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="../pages/Jameela.html">Jameela</a>
-        <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="../pages/sidra.html">Sidra</a>
-        <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="#">Solaman/Sasha</a>
-        <a class="w3-bar-item w3-button w3-mobile w3-purple .w3-hover-w3-khaki" href="../pages/mehmet.html">Mehmet</a>
-        <h2>Solaman and Sasha</h2>
-    </nav>
+
+
+<header>
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="display:width:200px;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="../index.html" class="w3-bar-item w3-button  w3-green w3-mobile">Home</a>
+        <a href="../pages/jameela.html" class="w3-bar-item w3-button w3-mobile w3-hide-small">Jameela</a>
+        <a href="../pages/sidra.html" class="w3-bar-item w3-button  w3-mobile w3-hide-small">Sidra</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-hide-small">Solaman/Sasha</a>
+        <a href="../pages/mehmet.html" class="w3-bar-item w3-button w3-mobile w3-hide-small">Mehmet</a>
+    </div>
 </header>
+<!-- Page Content -->
+<div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+</div>
 
 <body>
     <div class="w3-container w3-khaki">
