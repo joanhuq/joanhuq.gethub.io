@@ -66,11 +66,12 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
 /*  ---------------------- Variables ---------------------- */
 /* Read more about variables here: https://www.w3schools.com/css/css3_variables.asp */
 :root{
-  --background-light: #8A13AE;
-  --background-dark:#8201A9;
+  --background-light: #9E42FF;
+  --background-dark: #804ABA;
   --border:#804ABA;
-  --text: #FEFE25;
-  --accent: #F4F4C0;
+  --accent: #a3a324;
+  --text: #f0ef65;
+  --text-white: white;
   --text-black: #280931;
   --w3-khaki: #f0e68c;
 }
@@ -87,7 +88,6 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
     border: var(--background-dark);
 }
 .w3-panel{
-    border: var(--accent) ;
     border: 3px solid var(--background-dark);
     padding: 20px;
     margin-top: 20px;
@@ -224,14 +224,6 @@ dd{
     height: inherit;
 }
 
-.w3-container{
-    min-width: auto;
-    min-height: auto;
-    line-height: 1em;
-    list-style: none;
-    text-align: center;
-}
-
 li{
     color: #000;
     text-align: left;
@@ -334,11 +326,6 @@ footer {
     padding: 20px;
     width: 100%;
 }
-
-.w3-btn{
-    background-color: var(--background-dark);
-}
-
 .home__quote{
     margin-top: 15px;
     flex: 100% 1;
