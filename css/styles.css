@@ -27,23 +27,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-    position: static;
-}
-
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* Font family
 CormorantUnicase-Bold.ttf
@@ -66,14 +49,16 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
 /*  ---------------------- Variables ---------------------- */
 /* Read more about variables here: https://www.w3schools.com/css/css3_variables.asp */
 :root{
-  --background-light: #9E42FF;
-  --background-dark: #804ABA;
-  --border:#804ABA;
-  --accent: #a3a324;
-  --text: #f0ef65;
-  --text-white: white;
-  --text-black: #280931;
-  --w3-khaki: #f0e68c;
+    --dark-primary-color: #804ABA;
+    --light-primary-color:  #9E42FF;
+    --border:#804ABA;
+    --background-mustard: #A3A324;
+    --text: #f0ef65;
+    --accent: #a3a324;
+    --text-light: white;
+    --text-black: #280931;
+    --divider-color: #BDBDBD;
+    --w3-khaki: #f0e68c;
 }
 
 /* ---------------------- layout ------------------------- */
@@ -83,31 +68,17 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
     min-width: 1050px;
     box-sizing: border-box;
     line-height: 1.5em;
-    border: var(--background-dark);
-    background-color: var(--background-dark);
-    border: var(--background-dark);
+    border: var(--border);
+    background-color: var(--dark-primary-color);
 }
 .w3-panel{
-    border: 3px solid var(--background-dark);
+    border: 3px solid var(--dark-primary-color);
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: var(--accent);
 }
-.pale-khaki{
-    background-color:var(--w3-khaki);
-
-}
-.pale purple{
-    background-color: var(--background-dark);
-}
-
-.dotted-border{
-    border: 3px dotted var(--background-dark);
-    margin-bottom: 20px;
-}
-
 .container{
     min-width: 1080px;
     min-height: 500px;
@@ -119,6 +90,22 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
 }
 .accent{
     color: var(--accent)
+}
+
+.w3-purple{
+    text-align: center;
+    display: inline-block;
+    float: none;
+    border: 3px solid var(--background-dark);
+    background-color: var(--background-dark);
+}
+
+.pale purple{
+    background-color: var(--light-primary-color);
+}
+
+.pale-khaki{
+    background-color:var(--w3-khaki);
 }
 
 p{
@@ -138,9 +125,7 @@ p{
 }
 nav{
     text-align: center;
-    line-height:20px;
-    padding: 25px;
-    border: 3px dotted var(--border);
+    line-height: 20px;
     margin-top: 15px;
 }
 
@@ -152,25 +137,6 @@ header{
     padding-bottom: 15px;
     line-height: 1em;
     margin: auto 70px 70px;
-}
-
-.w3-bar .w3-bar-item{
-    text-align: center;
-    display: inline-block;
-    float: none;
-    background-color: var(--background-dark);
-    border: 3px solid var(--background-dark);
-    border-radius: 8px 25px;
-    padding-top: 25px;
-    padding-bottom: 30px;
-}
-
-.w3-purple, .w3-hover-purple:hover{
-    text-align: center;
-    display: inline-block;
-    float: none;
-    border: 3px solid var(--background-dark);
-    background-color: var(--background-dark);
 }
 
 dl {
@@ -213,10 +179,6 @@ dd{
     background: var(--accent);
     color: var(--text-black);
 }
-.body {
-    overflow-y: hidden
-}
-
 .main{
     position: relative;
     left: 15%;
@@ -236,17 +198,7 @@ li{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-
 }
-.wedding-list{
-    margin: 10px auto;
-    padding: 10px;
-    border: 3px solid rgb(230, 99, 58);
-    border-radius: 10px;
-    overflow: auto;
-    background: var(--accent);
-    color: var(--accent);
-} 
 
 h1{
     display: block;
@@ -282,10 +234,6 @@ h3, h4, h5, h6, hr{
     box-sizing: border-box;
     color: var(--text-black);
 }
-.text_alignleft{
-    text-align: left;
-    line-height: 2;
-}
 
 .home__aside, .home__bio {
     flex: 1 50%;
@@ -293,39 +241,13 @@ h3, h4, h5, h6, hr{
     color: var(--text-black)
 }
 
-/* remove borders when done with page layout */
-
-/* header, front-main, front-aside, figure, .container{
-    /* you can remove the border by putting your comment symbols around it 
-    border: 1px solid silver;
-    min-height: 100px; 
-    overflow: auto; 
-    box-sizing: border-box;
-}*/
-
-/*my buttons*/
-/* hover MUST come after link and visited 
-active MUST come after hover */
-
-
-.local-links{
-    background: rgb(205 209 218);
-    border: 2px solid var(--background-dark);
-    text-align: center;
-    width: 90%;
-    margin: 10px auto;
-    border-radius: 50px;
-    padding: 10px;
-}
-.local-links a{
-    margin-left:  15px;
-}
 footer {
     clear: both;
     text-align: center;
     padding: 20px;
     width: 100%;
 }
+
 .home__quote{
     margin-top: 15px;
     flex: 100% 1;
@@ -334,17 +256,17 @@ footer {
     color: var(--accent);
 }
 
+/* images */
 .home__image {
     width: 100%;
 }
 
-/* images */
-figcaption{
+.figcaption{
     padding: 2px;
     text-align: center;
     font-family: sans-serif;
     color: var(--background-dark);
-    background-color: #ECFA91;
+    background-color: var(--background-mustard);
 }
     
 .myfamily {
@@ -356,7 +278,6 @@ figcaption{
     margin: 10px;
     position: relative;
     border-radius: 10px;
-    
 }
 
 #resizebackground-image{
@@ -433,7 +354,7 @@ figcaption{
     float: right;  
 }
 /* responsive gallery */
-div.gallery {
+.div.gallery {
   border: 1px solid #ccc;
 }
 
@@ -461,24 +382,17 @@ div.desc {
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
+@media only screen and (max-width: 700px) .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
-}
 
-@media only screen and (max-width: 500px) {
-  .responsive {
+@media only screen and (max-width: 500px) .responsive {
     width: 100%;
   }
-}
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-
-
-
